@@ -4,6 +4,7 @@
     {{ form }}
     {% if book %}
     <button hx-post="{% url 'update-form' book.id %}">Submit</button>
+<!--     <button hx-post="{% url 'update-form' book.id %}" hx-headers='{"X-CSRFToken":"{{ csrf_token }}"}'> -->
     {% else %}
     <button hx-post=".">Submit</button>
     {% endif %}
