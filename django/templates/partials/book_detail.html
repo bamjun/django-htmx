@@ -4,5 +4,5 @@
 
     <button hx-get="{% url 'update-form' book.id %}">Update</button>
     <button hx-post="{% url 'delete-form' book.id %}">Delete</button>
-<!--     <button hx-post="{% url 'delete-form' book.id %}" hx-headers='{"X-CSRFToken":"{{ csrf_token }}"}'> -->
+<!--     <button hx-post="{% url 'delete-form' book.id %}" hx-headers='{"X-CSRFToken":"{{ csrf_token }}"}'>Delete</button> -->
 </div>
